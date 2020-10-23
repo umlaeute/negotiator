@@ -37,6 +37,6 @@ def test_readme2():
     assert acceptable.language.language == "de"
 
 
-if __name__ == "__main__":
+if __name__ == "__main__": # pragma: no cover
     test_readme1()
     test_readme2()

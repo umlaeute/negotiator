@@ -404,7 +404,7 @@ def test_contentlanguage4():
     assert "en" == ap.language.language
 
 
-if __name__ == "__main__":
+if __name__ == "__main__": # pragma: no cover
     test_contenttype1()
     test_contenttype2()
     test_contenttype3()

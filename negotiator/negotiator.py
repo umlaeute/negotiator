@@ -740,7 +740,7 @@ class ContentNegotiator(object):
         # an agreement on what content type they want and can deliver.  There's nothing more we can do!
         return None
 
-if __name__ == "__main__":
+if __name__ == "__main__": # pragma: no cover
     """
     Some basic tests to show the code in action
     """
