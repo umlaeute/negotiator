@@ -656,7 +656,7 @@ class ContentNegotiator(object):
         Utility method: if dict d contains key q, then append value v to the array which is identified by that key
         otherwise create a new key with the value of an array with a single value v
         """
-        if d.has_key(q):
+        if q in d:
             d[q].append(v)
         else:
             d[q] = [v]
@@ -694,7 +694,7 @@ class ContentNegotiator(object):
         
         # get the client requirement keys sorted with the highest q first (the server is a list which should be
         # in order of preference already)
-        ckeys = client.keys()
+        ckeys = list(client.keys())
         ckeys.sort(reverse=True)
 
         # the rule for determining what to return is that "the client's preference always wins", so we look for the
